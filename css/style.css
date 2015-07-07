@@ -1,0 +1,9 @@
+/* In this demo we simply have a clickable div - lets give it some style */
+div {
+  background-color: #0f9d58;
+  color: #ffffff;
+  cursor: pointer;
+  float: left;
+  padding: 20px;
+  text-align: center;
+}
