@@ -111,7 +111,7 @@ var componentHandler = (function() {
       registeredComponents_.push(newConfig);
     }
     
-    upgradeDomInternal(config.classAsString);
+    upgradeDomInternal(config.classAsString, config.cssClass);
   }
 
 
