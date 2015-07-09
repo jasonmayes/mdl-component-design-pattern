@@ -69,7 +69,8 @@ var componentHandler = (function() {
   function upgradeElementInternal(element, jsClass) {
     if (jsClass === undefined) {
       for (var i = 0; i < registeredComponents_.length; i++) {
-        if (element.classList.contains(registeredComponents_[i].cssClass)) {
+        var elemClasses = element.getAttribute('class').split(' ');
+        if (elemClasses.indexOf(registeredComponents_[i].cssClass) >= 0) {
           upgradeElementInternal(element, registeredComponents_[i].className);
         }
       }
